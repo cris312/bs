@@ -1,0 +1,50 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Microsoft Yahei';
+}
+
+body {
+	background-color: #E0E0E0;
+}
+
+
+.logo {
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	width: 107px;
+	height: 53px;
+	float: left;
+	margin:-5px 10px 0 0; 
+}
+
+.input-area {
+	background-color: #fff;
+	float: left;
+	padding: 5px;
+}
+
+.input-text {
+	height: 30px;
+	line-height: 30px;
+	width: 250px;
+	float: left;
+	border: none;
+	outline: none;
+}
+
+.input-btn {
+	background-image: url('../img/search-button.png');
+	height: 29px;
+	width: 29px;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.search-area {
+	position: absolute;
+	left: 200px;
+	top: 300px;
+}

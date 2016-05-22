@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>search test page</title>
+	<link rel="stylesheet" type="text/css" href="css/bingStyle.css">
+</head>
+<body>
+	<div class="bg-div">
+		<div class="search-area">
+			<div class="logo"></div>
+			<form>
+				<input type="text" class="input-text" style="width:600px">
+				<input type="submit" class="input-btn" value="">
+<br />
+				<label><input name="Fruit" type="checkbox" value="" style="width:60px"/>公司与公司 </label> 
+				<label><input name="Fruit" type="checkbox" value="" style="width:60px"/>公司与高管 </label> 
+				<label><input name="Fruit" type="checkbox" value="" style="width:60px"/>高管与高管 </label> 
+			</form>
+		</div>
+
+		<div id="input-suggest" class="suggest">
+			<ul id="suggest-result">
+				
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+	// 原生js代码实现
+		function getDOM(id) {
+			return document.getElementById('id');
+		}
+
+		function addEvent(id,event,fn){
+			var el=getDOM(id)||document;
+			// for not-IE
+			if(el.addEventListener){
+				el.addEventListener(event,fn,false);
+				// for IE
+			}else if (el.attachEvent) {
+				el.attachEvent('on'+event,fn);
+			}
+		}
+
+		function getElementLeft(el) {
+			var actualeft = el.offsetLeft;
+			var oParent = el.offsetParent;
+			while (oParent!=null) {
+				actualeft += oParent.offsetLeft;
+				oParent = oParent.offsetParent;
+			}
+
+			return actualeft;
+		}
+
+
+		function getElementTop(el) {
+			var actuatop = el.offsetTop;
+			var oParent = el.offsetParent;
+			while (oParent != null) {
+				actuatop += oParent.offsetTop;
+				oParent = oParent.offsetTop;
+			}
+			return actuatop;
+		}
+
+
+		
+	</script>
+</body>
+</html>
